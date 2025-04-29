@@ -102,3 +102,17 @@ p .Preguess{
     border-radius: 5px;
     
 }
+.Social{
+background-color: coral;
+padding: 10px;
+border-radius: 20px;
+}
+.Social:hover{
+    background-color: darkorange;
+    transition: 0.3s;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+.Social::before
