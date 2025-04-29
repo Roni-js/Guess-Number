@@ -115,12 +115,12 @@ p .Preguess{
         font-size: 10px;
     }
     .guessField{
-        width: 100%;
+        width: 98%;
         height: 25px;
         font-size: 14px;
     }
     .btn{
-        width: 100%;
+        max-width: 40%;
         padding: 8px 0;
         font-size: 14px;
     }
