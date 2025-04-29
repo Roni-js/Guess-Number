@@ -61,9 +61,58 @@ background-color: brown;
 .cache p{
   color: black;
 }
-@media screen and (max-width: 600px) {
+.Instructions{
+    color: black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+span{
+    color: purple;
+    font-weight: bold;
+    
+}
+p .Preguess{
+    background-color: gainsboro ;
+    padding: 2px 9px;
+    border-radius: 5px;
+    
+}
+.Social {
+    position: relative;
+    padding: 10px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background: none;
+    border: 2px solid #646cff;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .liquid {
+    background: linear-gradient(#646cff 0 0) no-repeat calc(200% - var(--p, 0%))
+      100% / 200% var(--p, 0.2em);
+    transition: 0.3s var(--t, 0s),
+      background-position 0.3s calc(0.3s - var(--t, 0s));
+  }
+  
+  .liquid:hover {
+    --p: 100%;
+    --t: 0.3s;
+    color: #fff;
+  }
+
+  /* Responsive Design */
+ 
+  @media screen and (max-width: 600px) {
     .container{
         padding: 10px;
+    }
+    .Social{
+        padding: 7px 5px;
+        font-size: 10px;
     }
     .guessField{
         width: 100%;
@@ -86,33 +135,3 @@ background-color: brown;
     }
     
 }
-.Instructions{
-    color: black;
-    font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-span{
-    color: purple;
-    font-weight: bold;
-    
-}
-p .Preguess{
-    background-color: gainsboro ;
-    padding: 2px 9px;
-    border-radius: 5px;
-    
-}
-.Social{
-background-color: coral;
-padding: 10px;
-border-radius: 20px;
-}
-.Social:hover{
-    background-color: darkorange;
-    transition: 0.3s;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    cursor: pointer;
-    text-decoration: none;
-}
-.Social::before
