@@ -85,6 +85,7 @@ function newGame() {
   playGame = true; // Re-enable game
   prearray = [];
   numGuess = 0;
+  randomNumber = parseInt(Math.random() * 10 + 1);
   Preguess.innerHTML = ''; // Clear guess history display
   UserInput.value = '';
   UserInput.disabled = false; // Re-enable input
